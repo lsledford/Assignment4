@@ -133,8 +133,8 @@ public class TicTacToeModelTest {
 	    model.setMarkAt(2, 2);
         assertEquals(TicTacToeModel.Result.XWIN, model.getResult());
 	    assertEquals(TicTacToeModel.Mark.EMPTY, model.getMarkAt(2, 0));
-	    model.setMarkAt(2, 0);
-	    assertEquals(TicTacToeModel.Mark.EMPTY, model.getMarkAt(2, 0));
+	    model.setMarkAt(2, 0);                                          // we marked it here?
+	    assertEquals(TicTacToeModel.Mark.EMPTY, model.getMarkAt(2, 0)); // there is a mark in this spot??
 	}
     
 }
